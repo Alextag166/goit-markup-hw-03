@@ -1,0 +1,314 @@
+/* studio + portfolio */
+body {
+  font-family: roboto, sans-serif;
+  color: #757575;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0%;
+}
+
+ul {
+  margin: 0%;
+  padding-left: 0%;
+}
+
+link {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* общий */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 2px solid red;
+}
+
+/* webstudio */
+.logo {
+  margin-right: 93px;
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  color: #2196f3;
+  letter-spacing: 0.03em;
+}
+
+/* верхний логотип цвет Studio */
+.logo-web {
+  color: #292929;
+}
+
+/* нижний логотип цвет Studio */
+.logo-web2 {
+  color: #ffffff;
+}
+/* убрал подчеркивание */
+.link {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: #2196f3;
+}
+
+.link:active {
+  color: #2196f3;
+}
+
+/* studio */
+.h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 0.06em;
+}
+
+/* link студия портфолио + контакты */
+.text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.text-p {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.text-team {
+  font-size: 16px;
+  line-height: 1.37;
+  letter-spacing: 0.03em;
+}
+
+/* portfolio <p текст */
+.text-pf {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+/* studio link студия и на portfolio link портфолио*/
+.web {
+  color: #2196f3;
+}
+
+/* нижний адрес */
+.down-nav {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: Left;
+  vertical-align: Top;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  list-style: none;
+  letter-spacing: 0.03em;
+}
+
+/* studio */
+.footer {
+  background-color: #2f303a;
+}
+
+/* нижние tel + web */
+.inf {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.03em;
+}
+
+/* убирает точки по краям */
+.list {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  list-style: none;
+}
+
+.list-item1 {
+  margin-right: 50px;
+}
+
+.list-item2 {
+  margin-right: 50px;
+}
+
+.list-item3 {
+  margin-right: 331px;
+}
+
+.list-link1 {
+  margin-right: 50px;
+}
+
+/* studio main */
+.section-one {
+  background-color: #2f303a;
+}
+
+/* studio img */
+.imgh2 {
+  left: 215px;
+  top: 1061px;
+}
+
+/* studio img */
+.imgh3 {
+  left: 215px;
+  top: 1635px;
+}
+
+/* studio */
+.h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: #212121;
+  letter-spacing: 0.03em;
+}
+
+/* portfolio h2 */
+.h2-pf {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  text-align: Left;
+  vertical-align: Top;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+/* studio */
+.h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #212121;
+  box-align: Left;
+  vertical-align: Top;
+  letter-spacing: 0.03em;
+}
+
+/* studio команда */
+.h3-team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: #212121;
+  letter-spacing: 0.06em;
+}
+
+/* studio основная кнопка */
+.button {
+  font-family: Roboto, sans-serif;
+  background-color: #2196f3;
+  border: none;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 4px 2px;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+}
+/* для кнопки studio  */
+.button:hover,
+.button:focus {
+  color: #212121;
+}
+.button:active {
+  color: #777777;
+}
+
+/* portfolio кнопки */
+.button-pf {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.39;
+  text-align: Center;
+  vertical-align: Top;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  list-style: none;
+  cursor: pointer;
+}
+
+.button-all {
+  font-family: Roboto;
+  background-color: #2196f3;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.button-pf:hover,
+.button-pf:focus {
+  color: #2196f3;
+}
+
+.button-pf:active {
+  color: #2196f3;
+}
+
+.button-all:hover,
+.button-all:focus {
+  color: #212121;
+}
+
+.button-all:active {
+  color: #777777;
+}
+
+/* studio portfolio номер телефона */
+.telephone {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-container {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
