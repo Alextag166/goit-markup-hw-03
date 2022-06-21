@@ -4,6 +4,12 @@ body {
   color: #757575;
 }
 
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #2196f3;
+}
+
 h1,
 h2,
 h3,
@@ -30,13 +36,14 @@ img {
 
 /* общий */
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 1170px;
+  padding-left: 0;
+  padding-right: 0;
   margin-left: auto;
   margin-right: auto;
-
   outline: 2px solid red;
+
+  background-color: lightblue;
 }
 
 /* webstudio */
@@ -79,6 +86,8 @@ img {
 
 /* link студия портфолио + контакты */
 .text {
+  margin-top: 32px;
+  margin-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -87,12 +96,17 @@ img {
 }
 
 .text-p {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  text-align: left;
+  margin-bottom: 0;
   letter-spacing: 0.03em;
 }
 
 .text-team {
+  text-align: center;
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.37;
   letter-spacing: 0.03em;
@@ -140,8 +154,6 @@ img {
 /* убирает точки по краям */
 .list {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   list-style: none;
 }
 
@@ -154,19 +166,25 @@ img {
 }
 
 .list-item3 {
-  margin-right: 331px;
+  margin-right: 301px;
 }
-
-.list-link1 {
+.list-link {
   margin-right: 50px;
 }
 
+.list-link2 {
+}
+
 /* studio main */
-.section-one {
+.hero {
   text-align: center;
   background-color: #2f303a;
 }
 
+/* studio main */
+.section {
+  display: flex;
+}
 /* studio */
 .h1 {
   padding-top: 200px;
@@ -198,6 +216,8 @@ img {
 
 /* studio */
 .h2 {
+  margin-bottom: 50px;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -207,6 +227,7 @@ img {
 
 /* portfolio h2 */
 .h2-pf {
+  padding-top: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -221,13 +242,17 @@ img {
   font-size: 14px;
   line-height: 1.14;
   color: #212121;
-  box-align: Left;
-  vertical-align: Top;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 10px;
   letter-spacing: 0.03em;
 }
 
 /* studio команда */
 .h3-team {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -309,6 +334,9 @@ img {
 
 /* studio portfolio номер телефона */
 .telephone {
+  position: absolute;
+  margin-top: 32px;
+  margin-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -322,4 +350,56 @@ img {
 .header {
   display: flex;
   align-items: center;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.service-item {
+  width: 270px;
+}
+
+/* flex фото чем мы зан. */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-element1 {
+  width: 370px;
+  margin-right: 30px;
+}
+
+.flex-element2 {
+  width: 370px;
+  margin-right: 30px;
+}
+
+.flex-element3 {
+  width: 370px;
+  margin-right: 0;
+}
+
+/* наша команда */
+.flex-team1 {
+  width: 270px;
+  margin-right: 30px;
+}
+.flex-team2 {
+  width: 270px;
+  margin-right: 30px;
+}
+
+.flex-team3 {
+  width: 270px;
+  margin-right: 30px;
+}
+
+.flex-team4 {
+  width: 270px;
+  margin-right: 0;
 }
