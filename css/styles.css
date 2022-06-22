@@ -1,10 +1,12 @@
 /* studio + portfolio */
 body {
+  background-color: #2196f3;
   font-family: roboto, sans-serif;
   color: #757575;
 }
 
 section {
+  padding-bottom: 94px;
   padding-top: 94px;
 }
 
@@ -40,6 +42,12 @@ img {
   margin-left: auto;
   margin-right: auto;
   outline: 2px solid red;
+}
+
+.section-team {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #f5f4fa;
 }
 
 /* webstudio */
@@ -234,8 +242,31 @@ img {
 }
 
 /* studio */
+
 .h2 {
+  padding-top: 0;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: #212121;
+  letter-spacing: 0.03em;
+}
+/* studio */
+
+.section-h2 {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+
+.h2-team {
+  margin: auto;
+  padding-top: 94px;
+  padding-bottom: 50px;
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -245,6 +276,7 @@ img {
 }
 
 /* portfolio h2 */
+
 .h2-pf {
   padding-top: 0;
   font-weight: 700;
@@ -378,8 +410,21 @@ img {
   list-style: none;
 }
 
-.service-item {
+.service-item1 {
   width: 270px;
+  margin-right: 30px;
+}
+.service-item2 {
+  width: 270px;
+  margin-right: 30px;
+}
+.service-item3 {
+  width: 270px;
+  margin-right: 30px;
+}
+.service-item4 {
+  width: 270px;
+  margin-right: 0;
 }
 
 /* flex фото чем мы зан. */
