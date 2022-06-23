@@ -19,111 +19,114 @@
 
 <body class="body">
   <header>
-    <nav>
-      <a class="link logo" href="./index.html">Web<span class="logo-web">Studio</span></a>
-      <ul class="list">
-        <li><a class="link text" href="./index.html">Студия</a></li>
-        <li><a class="link text web" href="">Портфолио</a></li>
-        <li><a class="link text" href="">Контакты</a></li>
+    <div class="header-container container">
+      <nav class="header">
+        <a class="link logo" href="./index.html">Web<span class="logo-web">Studio</span></a>
+        <ul class="list">
+          <li><a class="list list-item1 link text" href="./index.html">Студия</a></li>
+          <li><a class="list list-item2 link web text" href="">Портфолио</a></li>
+          <li><a class="list list-item3 link text" href="">Контакты</a></li>
+        </ul>
+      </nav>
+      <ul class="list list-link">
+        <li><a class="list list-link link text">info@devstudio.com</a></li>
+        <li><a class="list link text telephone">+38 096 111 11 11</a></li>
       </ul>
-    </nav>
-
-    <ul class="list">
-      <li class="link telephone"><a>info@devstudio.com</a></li>
-      <li class="link telephone"><a>+38 096 111 11 11</a></li>
-    </ul>
+    </div>
   </header>
   <!-- тело портфолио кнопки-->
   <main>
-    <section>
-      <ul class="list">
-        <li><button class="button-all" type="button">Все</button></li>
+    <section class="section">
+      <div class="container">
+        <ul class="list">
+          <li><button class="button-all" type="button">Все</button></li>
 
-        <li><button class="button-pf" type="button">Веб-сайты</button></li>
+          <li><button class="button-pf pf1" type="button">Веб-сайты</button></li>
 
-        <li><button class="button-pf" type="button">Приложения</button></li>
+          <li><button class="button-pf pf2" type="button">Приложения</button></li>
 
-        <li><button class="button-pf" type="button">Дизайн</button></li>
+          <li><button class="button-pf pf3" type="button">Дизайн</button></li>
 
-        <li><button class="button-pf" type="button">Маркетинг</button></li>
-      </ul>
-      <!-- тело портфолио список верхие картинки-->
-      <ul>
-        <li class="list">
-          <img src="./images/notebook.jpg" alt="notebook" width="505.98" height="351.94" />
-          <h2 class="h2-pf">Технокряк</h2>
-          <p class="text-pf" lang="ru">Веб-сайт</p>
-        </li>
+          <li><button class="button-pf pf4" type="button">Маркетинг</button></li>
+        </ul>
+        <!-- тело портфолио список верхие картинки-->
+        <ul class="card-set">
+          <li class="card-set-item list-pf">
+            <img src="./images/notebook.jpg" alt="notebook" width="505.98" height="351.94" />
+            <h2 class="h2-pf">Технокряк</h2>
+            <p class="text-pf" lang="ru">Веб-сайт</p>
+          </li>
+          <li class="card-set-item list-pf">
+            <img src="./images/New Orlean vs Golden Star.jpg" alt="New Orlean vs Golden Star" width="505.98"
+              height="351.94" />
+            <h2 class="h2-pf">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+            <p class="text-pf" lang="ru">Дизайн</p>
+          </li>
 
-        <li class="list">
-          <img src="./images/New Orlean vs Golden Star.jpg" alt="New Orlean vs Golden Star" width="505.98"
-            height="351.94" />
-          <h2 class="h2-pf">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-          <p class="text-pf" lang="ru">Дизайн</p>
-        </li>
+          <li class="card-set-item list-pf">
+            <img src="./images/Seafood.jpg" alt="Seafood" width="505.98" height="351.94" />
+            <h2 class="h2-pf">Ресторан <span lang="en">Seafood</span></h2>
+            <p class="text-pf" lang="ru">Приложение</p>
+          </li>
 
-        <li class="list">
-          <img src="./images/Seafood.jpg" alt="Seafood" width="505.98" height="351.94" />
-          <h2 class="h2-pf">Ресторан <span lang="en">Seafoo</span></h2>
-          <p class="text-pf" lang="ru">Приложение</p>
-        </li>
+          <!-- тело портфолио список средние картинки -->
+          <li class="card-set-item list-pf">
+            <img src="./images/Prime.jpg" alt="Prime" width="505.98" height="351.94" />
+            <h2 class="h2-pf">Проект <span lang="en">Prime</span></h2>
+            <p class="text-pf" lang="ru">Маркетинг</p>
+          </li>
 
-        <!-- тело портфолио список средние картинки -->
-        <li class="list">
-          <img src="./images/Prime.jpg" alt="Prime" width="505.98" height="351.94" />
-          <h2 class="h2-pf">Проект <span lang="en">Prime</span></h2>
-          <p class="text-pf" lang="ru">Маркетинг</p>
-        </li>
+          <li class="card-set-item list-pf">
+            <img src="./images/Boxes.jpg" alt="Boxes" width="505.98" height="351.94" />
+            <h2 class="h2-pf">Проект <span lang="en">Boxes</span></h2>
+            <p class="text-pf" lang="ru">Приложение</p>
+          </li>
 
-        <li class="list">
-          <img src="./images/Boxes.jpg" alt="Boxes" width="505.98" height="351.94" />
-          <h2 class="h2-pf">Проект <span lang="en">Boxes</span></h2>
-          <p class="text-pf" lang="ru">Приложение</p>
-        </li>
+          <li class="card-set-item list-pf">
+            <img src="./images/Borders.jpg" alt="Borders" width="505.98" height="351.94" />
+            <h2 class="h2-pf">Inspiration has no Borders</h2>
+            <p class="text-pf" lang="ru">Веб-сайт</p>
+          </li>
 
-        <li class="list">
-          <img src="./images/Borders.jpg" alt="Borders" width="505.98" height="351.94" />
-          <h2 class="h2-pf">Inspiration has no Borders</h2>
-          <p class="text-pf" lang="ru">Веб-сайт</p>
-        </li>
+          <!-- тело портфолио список нижние картинки -->
+          <li class="card-set-item list-pf">
+            <img src="./images/Limited Edition.jpg" alt="Limited Edition" width="505.98" height="351.94" />
+            <h2 class="h2-pf">Издание <span lang="en">Limited Edition</span></h2>
+            <p class="text-pf" lang="ru">Дизайн</p>
+          </li>
 
-        <!-- тело портфолио список нижние картинки -->
-        <li class="list">
-          <img src="./images/Limited Edition.jpg" alt="Limited Edition" width="505.98" height="351.94" />
-          <h2 class="h2-pf">Издание <span lang="en">Limited Edition</span></h2>
-          <p class="text-pf" lang="ru">Дизайн</p>
-        </li>
+          <li class="card-set-item list-pf">
+            <img src="./images/LAB.jpg" alt="LAB" width="505.98" height="351.94" />
+            <h2 class="h2-pf">Издание <span lang="en">Edition</span></h2>
+            <p class="text-pf" lang="ru">Дизайн</p>
+          </li>
 
-        <li class="list">
-          <img src="./images/LAB.jpg" alt="LAB" width="505.98" height="351.94" />
-          <h2 class="h2-pf">Издание <span lang="en">Edition</span></h2>
-          <p class="text-pf" lang="ru">Дизайн</p>
-        </li>
-
-        <li class="list">
-          <img src="./images/Business.jpg" alt="Business" width="505.98" height="351.94" />
-          <h2 class="h2-pf">Growing Business</h2>
-          <p class="text-pf" lang="ru">Приложение</p>
-        </li>
-      </ul>
+          <li class="card-set-item list-pf">
+            <img src="./images/Business.jpg" alt="Business" width="505.98" height="351.94" />
+            <h2 class="h2-pf">Growing Business</h2>
+            <p class="text-pf" lang="ru">Приложение</p>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
 
   <!-- footer портфолио -->
-  <footer class="footer">
+  <div class="container">
+    <footer class="footer">
+      <a class="link logo-down" href="./index.html">Web<span class="logo-web2">Studio</span></a>
+      <address class="contacts">
+        <p class="down-nav">г. Киев, пр-т Леси Украинки, 26</p>
+        <ul class="list-down">
+          <li><a class="inf">info@example.com</a></li>
+        </ul>
+        <ul class="list">
+          <li><a class="inf">+38 099 111 11 11</a></li>
+        </ul>
+      </address>
+    </footer>
+  </div>
 
-    <a class="link logo" href="./index.html">Web<span class="logo-web2">Studio</span></a>
-
-    <address class="down-nav">
-      <p class="down-nav">г. Киев, пр-т Леси Украинки, 26</p>
-
-      <ul class="list">
-        <li><a class="inf">info@example.com</a></li>
-
-        <li><a class="inf">+38 099 111 11 11</a></li>
-      </ul>
-    </address>
-  </footer>
 </body>
 
 </html>

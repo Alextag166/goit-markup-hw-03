@@ -1,10 +1,31 @@
 /* studio + portfolio */
 body {
-  background-color: #2196f3;
   font-family: roboto, sans-serif;
   color: #757575;
 }
 
+:root {
+  --items: 3; /* кількість карток в рядку */
+  --indent: 30px; /* відступи між картками */
+}
+
+/**
+  |============================
+  | сітка із застосуванням flex-box
+  |============================
+*/
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(-1 * var(--indent) / 2);
+}
+
+.card-set-item {
+  flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
+  margin: calc(var(--indent) / 2);
+}
+
+/* studio main */
 section {
   padding-bottom: 94px;
   padding-top: 94px;
@@ -36,12 +57,11 @@ img {
 
 /* общий */
 .container {
-  width: 1170px;
-  padding-left: 0;
-  padding-right: 0;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid red;
 }
 
 .section-team {
@@ -67,13 +87,13 @@ img {
 
 /* webstudio down */
 .logo-down {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 0;
+  padding-bottom: 20px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
 
   /* identical to box height */
   color: #2196f3;
@@ -113,7 +133,7 @@ img {
   letter-spacing: 0.02em;
   color: #212121;
 }
-
+/* studio */
 .text-p {
   font-weight: 400;
   font-size: 14px;
@@ -122,7 +142,7 @@ img {
   margin-bottom: 0;
   letter-spacing: 0.03em;
 }
-
+/* studio */
 .text-team {
   text-align: center;
   margin-bottom: 30px;
@@ -141,6 +161,10 @@ img {
 /* studio link студия и на portfolio link портфолио*/
 .web {
   color: #2196f3;
+}
+
+.contacts {
+  padding-bottom: 0;
 }
 
 /* нижний адрес */
@@ -178,9 +202,29 @@ img {
   letter-spacing: 0.03em;
 }
 
-/* убирает точки по краям */
+.inf2 {
+  padding-top: 9px;
+  padding-bottom: 20px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.03em;
+}
+/* footer тел и gmail */
+.list-down {
+  padding-bottom: 9px;
+  list-style: none;
+}
+
+/* studio убирает точки по краям */
 .list {
   display: flex;
+  list-style: none;
+}
+
+/* portfolio */
+.list-pf {
   list-style: none;
 }
 
@@ -193,13 +237,10 @@ img {
 }
 
 .list-item3 {
-  margin-right: 301px;
+  margin-right: 331px;
 }
 .list-link {
   margin-right: 50px;
-}
-
-.list-link2 {
 }
 
 /* studio main */
@@ -208,10 +249,6 @@ img {
   background-color: #2f303a;
 }
 
-/* studio main */
-.section {
-  display: flex;
-}
 /* studio */
 .h1 {
   padding-top: 200px;
@@ -278,12 +315,10 @@ img {
 /* portfolio h2 */
 
 .h2-pf {
-  padding-top: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   text-align: Left;
-  vertical-align: Top;
   letter-spacing: 0.06em;
   color: #212121;
 }
@@ -318,6 +353,7 @@ img {
   border-radius: 4px;
   margin-bottom: 200px;
   color: white;
+  border-color: transparent;
 }
 
 .button-text {
@@ -339,29 +375,45 @@ img {
 }
 
 /* portfolio кнопки */
-.button-pf {
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.39;
-  text-align: Center;
-  vertical-align: Top;
-  letter-spacing: 0.03em;
-
-  color: #212121;
-  list-style: none;
-  cursor: pointer;
-}
 
 .button-all {
+  width: 73px;
+  height: 38px;
+  margin-top: 0;
+  margin-left: 280px;
+  margin-right: 8px;
+  border-radius: 4px;
   font-family: Roboto;
   background-color: #2196f3;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  border-color: transparent;
 
   color: #ffffff;
+  cursor: pointer;
+}
+
+.button-all:hover,
+.button-all:focus {
+  color: black;
+}
+
+.button-all:active {
+  color: #777777;
+}
+
+.button-pf {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.39;
+  letter-spacing: 0.03em;
+  justify-content: center;
+  border-color: transparent;
+
+  list-style: none;
   cursor: pointer;
 }
 
@@ -374,16 +426,49 @@ img {
   color: #2196f3;
 }
 
-.button-all:hover,
-.button-all:focus {
-  color: #212121;
+/* кнопки portfolio */
+.pf1 {
+  width: 128px;
+  height: 38px;
+  margin-left: 0;
+  margin-top: 0px;
+  margin-right: 8px;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
-.button-all:active {
-  color: #777777;
+.pf2 {
+  width: 145px;
+  height: 38px;
+  margin-left: 0;
+  margin-top: 0px;
+  margin-right: 8px;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
-/* studio portfolio номер телефона */
+.pf3 {
+  width: 103px;
+  height: 38px;
+  margin-top: 0px;
+  margin-right: 8px;
+  margin-bottom: 50px;
+  margin-left: 0;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.pf4 {
+  width: 130px;
+  height: 38px;
+  margin-left: 0;
+  margin-top: 0px;
+  margin-right: 8px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+/* studio, portfolio номер телефона */
 .telephone {
   position: absolute;
   margin-top: 32px;
@@ -402,7 +487,7 @@ img {
   display: flex;
   align-items: center;
 }
-
+/* studio service  */
 .service {
   display: flex;
   align-items: center;
@@ -410,18 +495,25 @@ img {
   list-style: none;
 }
 
+/* studio service внимание к деталям */
 .service-item1 {
   width: 270px;
   margin-right: 30px;
 }
+
+/* studio service пунетуальность */
 .service-item2 {
   width: 270px;
   margin-right: 30px;
 }
+
+/* studio service планирование */
 .service-item3 {
   width: 270px;
   margin-right: 30px;
 }
+
+/* studio service соврем. технологии */
 .service-item4 {
   width: 270px;
   margin-right: 0;
@@ -448,7 +540,7 @@ img {
   margin-right: 0;
 }
 
-/* наша команда */
+/* studio наша команда */
 .flex-team1 {
   width: 270px;
   margin-right: 30px;
@@ -466,4 +558,53 @@ img {
 .flex-team4 {
   width: 270px;
   margin-right: 0;
+}
+
+.box {
+}
+
+/* portfolio картинки */
+.box-element {
+}
+
+.notebook {
+  width: 370px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.orlean {
+  width: 370px;
+}
+
+.seafood {
+  width: 370px;
+}
+.prime {
+  width: 370px;
+}
+
+.boxes {
+  width: 370px;
+}
+
+.borders {
+  width: 370px;
+}
+.edition {
+  width: 370px;
+}
+
+.lab {
+  width: 370px;
+}
+
+.business {
+  width: 370px;
+}
+
+/* portfolio */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
 }
